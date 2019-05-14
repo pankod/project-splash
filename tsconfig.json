@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDirs": [
+      "./src"
+    ],
+    "importHelpers": true,
+    "paths": {
+      "@Components": [
+        "src/Components"
+      ],
+      "@Components/*": [
+        "src/Components/*"
+      ],
+      "@Interfaces": [
+        "src/Interfaces"
+      ],
+      "@Interfaces/*": [
+        "src/Interfaces/*"
+      ]
+    },
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "target": "es2016",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "plugins": [],
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "__tests__",
+    "src/Example/**"
+  ],
+  "include": [
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ]
+}
