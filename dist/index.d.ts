@@ -1,4 +1,2 @@
-import React from 'react';
-export default class Index extends React.Component {
-    render(): JSX.Element;
-}
+import { Splash } from '@Components/Splash';
+export default Splash;
