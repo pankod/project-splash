@@ -1,6 +1,6 @@
 {
   "name": "project-splash",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "project-splash for open source projects",
   "scripts": {
     "build": "tsc  && tscpaths -p tsconfig.json -s ./src -o ./dist && npm run copy-assets",
