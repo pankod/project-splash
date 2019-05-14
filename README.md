@@ -1,6 +1,7 @@
 
 <div align="center">
- <img src="screenshots/project-splash.png" width="200" height="400">
+ <img src="screenshots/project-splash-ios.png" width="400" height="400">
+ <img src="screenshots/project-splash-android.png" width="400" height="400">
 </div>
 
 ----
@@ -11,6 +12,7 @@ Thanks to this component, it’ll be too easy to add splash to pankod open sourc
 <div align="center">
   <sub>Created by <a href="https://www.pankod.com">Pankod</a></sub>
 </div>
+<br/>
 <div align="center">
   <!-- CodeCov -->
   <a href="https://codecov.io/gh/pankod/project-splash">
