@@ -1,68 +1,41 @@
-## React and React Native npm package boilerplate with Typescript support
+## Splash for open source projects
 ----
 
 ### About
-This boilerplate make it easier to create npm package from Typescript projects.
 
-The project is intended to be used with the latest Active LTS release of [Node.js][nodejs]. 
+Thanks to this component, it’ll be too easy to add splash to pankod open source projects.
+<div align="center">
+  <sub>Created by <a href="https://www.pankod.com">Pankod</a></sub>
+</div>
+
 
 
 ### Getting Started
 
-To start, just clone the repository with following commands:
-
 ```sh
-git clone https://github.com/pankod/react-typescript-npm-package-boilerplate
-
-cd react-typescript-npm-package-boilerplate
-
-npm install
+npm install --save https://github.com/pankod/project-splash
 ```
 
- **Then run the following commands for:**
+ ## Example
+```javascript
 
- **Babel build** : 
-```sh 
-$ npm run babel-build
-```
+import React from 'react';
+import Splash from 'project-splash'
 
- **Typescript build** : 
-```sh 
-$ npm run ts-build
-```
+export default class App extends React.Component {
 
-#### This boilerplate includes:
-
-- Typescript 3
-- TSLint with Microsoft rules
-- Jest and Enzyme support,
-- Simple example of TypeScript code
-- .editorconfig for consistent file format
-
-**You should change the lines on package.json:**
-
-If you develop React for web:
-
-```json
-"devDependencies:{
-  "@types/react": "^16.8.5", // or @latest
-  "@types/react-dom": "^16.8.2", // or @latest
-},
-
-"peerDependencies": {
-    "react": "*",
-    "react-dom": "*",
+	public render(): JSX.Element =>  <Splash/>
 }
-```
-or React-Native development environment 
-```json
-"devDependencies:{
-  "@types/react": "^16.8.5", // or @latest
-  "@types/react-native": "^16.8.2", // or @latest
-},
 
-"peerDependencies": {
-    "react": "*",
-    "react-native": "*",
-}
 ```
+## Options
+<br/>
+
+| Properties          | Type                  | Description                 | Default                                                                                           |
+| ------------------- | --------------------- | --------------------------- | ------------------------------------------------------------------------------------------------- |
+| **backgroundImage** | `ImageSourcePropType` | Background image of splash  | `https://github.com/pankod/project-splash/blob/master/src/Assets/Images/pankod-dark.png?raw=true` |
+| **style**           | `ImageStyle`          | Custom style for splash     | `{backgroundColor:'#F9D92D',height: '100%',width: '100%',zIndex: 1}`                              |
+| **resizeMode**      | `ImageResizeMode`     | Background image resizeMode | `"contain"`                                                                                       |
+
+
+

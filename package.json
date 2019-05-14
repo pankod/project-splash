@@ -1,11 +1,12 @@
 {
-  "name": "project-splash",
-  "version": "1.0.9",
+  "name": "@pankod/project-splash",
+  "version": "1.0.10",
   "description": "project-splash for open source projects",
   "scripts": {
     "build": "tsc  && tscpaths -p tsconfig.json -s ./src -o ./dist && npm run copy-assets",
     "copy-assets": "cp -R src/Assets/ dist/Assets/",
-    "test": "jest"
+    "test": "nyc jest",
+    "posttest": "nyc report --reporter=json > coverage/coverage.json"
   },
   "repository": {
     "type": "git",
@@ -40,19 +41,24 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react-native": "^0.59.8"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.9.2",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.9",
     "@types/react": "^16.8.5",
     "@types/react-dom": "^16.8.2",
     "@types/react-native": "^0.57.55",
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-adapter-react-16": "^1.13.0",
     "jest": "^24.1.0",
+    "jest-fetch-mock": "^2.1.2",
+    "nyc": "^14.1.1",
+    "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.3",
     "semantic-release": "^15.13.3",
-    "ts-jest": "^24.0.0",
+    "ts-jest": "^24.0.2",
     "tscpaths": "0.0.9",
     "tslint": "^5.13.0",
     "tslint-config-prettier": "^1.18.0",

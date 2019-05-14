@@ -1,0 +1,13 @@
+language: node_js
+scripts:
+  - npm install codecov -g
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email: true
+node_js:  
+  - "node"
+after_success:
+  - npm run build
+  - codecov
