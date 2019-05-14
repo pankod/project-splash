@@ -17,7 +17,13 @@
       ],
       "@Interfaces/*": [
         "src/Interfaces/*"
-      ]
+      ],
+      "@Assets": [
+        "src/Assets"
+      ],
+      "@Assets/*": [
+        "src/Assets/*"
+      ],
     },
     "lib": [
       "es2016",
@@ -48,8 +54,7 @@
   "exclude": [
     "node_modules",
     "dist",
-    "__tests__",
-    "src/Example/**"
+    "__tests__"
   ],
   "include": [
     "src/**/*.tsx",

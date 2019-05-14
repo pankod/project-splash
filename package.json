@@ -1,6 +1,6 @@
 {
   "name": "project-splash",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "project-splash for open source projects",
   "scripts": {
     "ts-build": "rm -rf ./dist/** && tsc",
