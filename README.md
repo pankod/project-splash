@@ -1,4 +1,8 @@
-## Splash for open source projects
+
+<div align="center">
+ <img src="screenshots/project-splash.png" width="200" height="400">
+</div>
+
 ----
 
 ### About
@@ -7,7 +11,16 @@ Thanks to this component, it’ll be too easy to add splash to pankod open sourc
 <div align="center">
   <sub>Created by <a href="https://www.pankod.com">Pankod</a></sub>
 </div>
-
+<div align="center">
+  <!-- CodeCov -->
+  <a href="https://codecov.io/gh/pankod/project-splash">
+    <img src="https://codecov.io/gh/pankod/project-splash/branch/master/graph/badge.svg" />
+  </a>
+  <!-- Build Status -->
+  <a href="https://travis-ci.org/pankod/project-splash">
+    <img src="https://travis-ci.org/pankod/project-splash.svg?branch=master" alt="Build Status" />
+  </a>
+</div>
 
 
 ### Getting Started
@@ -20,7 +33,7 @@ npm install --save https://github.com/pankod/project-splash
 ```javascript
 
 import React from 'react';
-import Splash from 'project-splash'
+import Splash from '@pankod/project-splash'
 
 export default class App extends React.Component {
 
