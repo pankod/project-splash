@@ -1,11 +1,11 @@
 {
   "name": "project-splash",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "project-splash for open source projects",
   "scripts": {
     "ts-build": "rm -rf ./dist/** && tsc && npm run copy-assets",
     "babel-build": "rm -rf ./dist/** && babel ./src --out-dir dist --extensions '.ts,.tsx' && npm run copy-assets",
-    "copy-assets": "cp -R src/Assets/Images dist/Assets/",
+    "copy-assets": "cp -R src/Assets/ dist/Assets/",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "watch": "tsc -- --watch",
