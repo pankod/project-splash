@@ -1,1 +1,1 @@
-export { ISplashProps } from '@Interfaces/ISplashProps';
+export { ISplashProps } from './ISplashProps';

@@ -1,1 +1,1 @@
-export { Splash } from '@Components/Splash';
+export { Splash } from './Splash';
