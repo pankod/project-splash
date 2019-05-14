@@ -1,14 +1,17 @@
 import * as React from 'react';
 import {
 	ImageBackground,
+	ImageResizeMode,
+	ImageSourcePropType,
 	ImageStyle,
-	View
+	View,
 } from 'react-native';
 
 import { ISplashProps } from '@Interfaces';
 
 const defaultProps = {
-	backgroundImage: require('@Assets/Images/pankod-dark.png'),
+	backgroundImage: require('@Assets/Images/pankod-dark.png') as ImageSourcePropType,
+	resizeMode: 'contain' as ImageResizeMode,
 	splashStyle: {
 		backgroundColor: '#F9D92D',
 		height: '100%',
@@ -25,7 +28,7 @@ export const Splash = (props: ISplashProps): React.ReactElement => (
 	}}>
 		<ImageBackground source={props.backgroundImage || defaultProps.backgroundImage}
 			style={props.splashStyle || defaultProps.splashStyle}
-			resizeMode="contain">
+			resizeMode={props.resizeMode || defaultProps.resizeMode}>
 		</ImageBackground>
 	</View>
 );
