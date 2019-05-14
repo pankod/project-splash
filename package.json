@@ -1,14 +1,14 @@
 {
   "name": "project-splash",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "project-splash for open source projects",
   "scripts": {
-    "ts-build": "rm -rf ./dist/** && tsc && npm run copy-assets",
-    "babel-build": "rm -rf ./dist/** && babel ./src --out-dir dist --extensions '.ts,.tsx' && npm run copy-assets",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js && npm run copy-assets",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
     "copy-assets": "cp -R src/Assets/ dist/Assets/",
-    "travis-deploy-once": "travis-deploy-once",
-    "semantic-release": "semantic-release",
-    "watch": "tsc -- --watch",
     "test": "jest"
   },
   "repository": {

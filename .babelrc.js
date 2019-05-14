@@ -6,17 +6,17 @@ module.exports = {
 	],
 	plugins: [
 		[
-		  "module-resolver",
-		  {
-			root: [
-			  "./"
-			],
-			alias: {
-			  "@Components": "./src/Components",
-			  "@Interfaces": "./src/Interfaces",
-			  "@Assets": "./src/Assets",
+			"module-resolver",
+			{
+				root: [
+					"./"
+				],
+				alias: {
+					"@Components": "./src/Components",
+					"@Interfaces": "./src/Interfaces",
+					"@Assets": "./src/Assets",
+				}
 			}
-		  }
 		]
-	  ]
+	]
 };
