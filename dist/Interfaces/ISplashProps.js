@@ -1,1 +1,1 @@
-//# sourceMappingURL=ISplashProps.js.map
+"use strict";
