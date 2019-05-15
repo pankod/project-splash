@@ -1,12 +1,10 @@
 
 <div align="center">
- <img src="screenshots/project-splash-ios.png" width="400" height="400">
- <img src="screenshots/project-splash-android.png" width="400" height="400">
+ <img src="screenshots/project-splash-ios.png">
+ <img src="screenshots/project-splash-android.png">
 </div>
 
-----
-
-### About
+## About
 
 Thanks to this component, it’ll be too easy to add splash to pankod open source projects.
 <div align="center">
@@ -31,7 +29,7 @@ Thanks to this component, it’ll be too easy to add splash to pankod open sourc
 npm install --save https://github.com/pankod/project-splash
 ```
 
- ## Example
+## Example
 ```javascript
 
 import React from 'react';
