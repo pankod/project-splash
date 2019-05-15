@@ -1,7 +1,7 @@
 
 <div align="center">
- <img src="screenshots/project-splash-ios.png" width="400" height="400">
- <img src="screenshots/project-splash-android.png" width="400" height="400">
+ <img src="screenshots/project-splash-ios.png" width="200px">
+ <img src="screenshots/project-splash-android.png" width="200px">
 </div>
 
 ----
