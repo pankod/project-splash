@@ -43,7 +43,7 @@
     "react": "^16.8.3"
   },
   "devDependencies": {
-    "react-native": "^0.59.8",
+    "react-native": "^0.62.3",
     "@types/enzyme": "^3.9.2",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.9",
